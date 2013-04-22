@@ -46,9 +46,11 @@
   (ido-mode t)
   (setq ido-enable-flex-matching t)
 
-  (tool-bar-mode -1)
   (menu-bar-mode -1)
-  (scroll-bar-mode -1)
+  (when (boundp 'tool-bar-mode)
+    (tool-bar-mode -1))
+  (when (boundp 'scroll-bar-mode)
+    (scroll-bar-mode -1))
 
   (require 'uniquify)
   (setq uniquify-buffer-name-style 'forward)
