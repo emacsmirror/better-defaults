@@ -47,9 +47,9 @@
   (setq ido-enable-flex-matching t)
 
   (menu-bar-mode -1)
-  (when (boundp 'tool-bar-mode)
+  (when (fboundp 'tool-bar-mode)
     (tool-bar-mode -1))
-  (when (boundp 'scroll-bar-mode)
+  (when (fboundp 'scroll-bar-mode)
     (scroll-bar-mode -1))
 
   (require 'uniquify)
