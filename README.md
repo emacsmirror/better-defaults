@@ -68,6 +68,8 @@ functionality came from if it turns out to be undesired.
 
 * `require-final-newline` is set to avoid problems with crontabs, etc.
 
+* Setting `load-prefer-newer` prevents stale elisp bytecode from shadowing more up-to-date source files.
+
 * Ediff is set up to use the existing frame instead of creating a new one.
 
 ## Copyright
