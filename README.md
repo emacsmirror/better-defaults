@@ -83,6 +83,8 @@ loads quickly enough not to impact startup time.
 
 * Ediff is set up to use the existing frame instead of creating a new one.
 
+* `indent-tabs-mode` defaults to nil.
+
 ## Copyright
 
 Copyright © 2013-2014 Phil Hagelberg and contributors
