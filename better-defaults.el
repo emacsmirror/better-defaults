@@ -1,10 +1,10 @@
 ;;; better-defaults.el --- Fixing weird quirks and poor defaults
 
-;; Copyright © 2013 Phil Hagelberg and contributors
+;; Copyright © 2013-2016 Phil Hagelberg and contributors
 
 ;; Author: Phil Hagelberg
 ;; URL: https://github.com/technomancy/better-defaults
-;; Version: 0.1.2
+;; Version: 0.1.3
 ;; Created: 2013-04-16
 ;; Keywords: convenience
 
