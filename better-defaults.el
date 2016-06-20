@@ -43,8 +43,9 @@
 
 ;;;###autoload
 (progn
-  (ido-mode t)
-  (setq ido-enable-flex-matching t)
+  (unless (fboundp helm-mode)
+    (ido-mode t)
+    (setq ido-enable-flex-matching t))
 
   (menu-bar-mode -1)
   (when (fboundp 'tool-bar-mode)
