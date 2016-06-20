@@ -43,7 +43,7 @@
 
 ;;;###autoload
 (progn
-  (unless (fboundp helm-mode)
+  (unless (fboundp 'helm-mode)
     (ido-mode t)
     (setq ido-enable-flex-matching t))
 
