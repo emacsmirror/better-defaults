@@ -41,7 +41,6 @@
 
 ;;; Code:
 
-;;;###autoload
 (progn
   (unless (fboundp 'helm-mode)
     (ido-mode t)
