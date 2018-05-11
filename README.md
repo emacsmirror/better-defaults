@@ -25,18 +25,8 @@ functionality came from if it turns out to be undesired.
 
 ## Usage
 
-There are three steps:
-
-1. Add [Marmalade](https://marmalade-repo.org) to your package
-   sources.
-2. Install this library (using `M-x package-install`).
-3. Add `(require 'better-defaults)` to your init-file.
-
-You can run from source by doing the following:
-
 1. Clone this repository.
-2. Add `(add-to-list 'load-path "/path/to/better-defaults")` to your
-   init-file.
+2. Add `(add-to-list 'load-path "/path/to/better-defaults")` to your init-file.
 3. Add `(require 'better-defaults)` to your init-file.
 
 ## New behaviour
