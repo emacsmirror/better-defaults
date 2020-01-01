@@ -61,8 +61,8 @@
   (require 'uniquify)
   (setq uniquify-buffer-name-style 'forward)
 
-  (require 'saveplace)
-  (setq-default save-place t)
+  ;; https://www.emacswiki.org/emacs/SavePlace
+  (save-place-mode 1)
 
   (global-set-key (kbd "M-/") 'hippie-expand)
   (global-set-key (kbd "C-x C-b") 'ibuffer)
