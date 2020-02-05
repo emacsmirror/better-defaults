@@ -81,9 +81,11 @@
         require-final-newline t
         visible-bell t
         load-prefer-newer t
-        ediff-window-setup-function 'ediff-setup-windows-plain
-        backup-directory-alist `(("." . ,(concat user-emacs-directory
-                                                 "backups")))))
+        ediff-window-setup-function 'ediff-setup-windows-plain)
+
+  (unless backup-directory-alist
+    (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
+                                                   "backups"))))))
 
 (provide 'better-defaults)
 ;;; better-defaults.el ends here
