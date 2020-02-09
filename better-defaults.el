@@ -1,10 +1,11 @@
 ;;; better-defaults.el --- Fixing weird quirks and poor defaults
 
-;; Copyright © 2013-2019 Phil Hagelberg and contributors
+;; Copyright © 2013-2020 Phil Hagelberg and contributors
 
 ;; Author: Phil Hagelberg
 ;; URL: https://github.com/technomancy/better-defaults
 ;; Version: 0.1.4
+;; Package-Requires: ((emacs "25.1"))
 ;; Created: 2013-04-16
 ;; Keywords: convenience
 
@@ -13,7 +14,7 @@
 ;;; Commentary:
 
 ;; There are a number of unfortunate facts about the way Emacs works
-;; out of the box. While all users will eventually need to learn their
+;; out of the box.  While all users will eventually need to learn their
 ;; way around in order to customize it to their particular tastes,
 ;; this package attempts to address the most obvious of deficiencies
 ;; in uncontroversial ways that nearly everyone can agree upon.
@@ -81,10 +82,11 @@
         require-final-newline t
         visible-bell t
         load-prefer-newer t
-        ediff-window-setup-function 'ediff-setup-windows-plain
-        save-place-file (concat user-emacs-directory "places")
-        backup-directory-alist `(("." . ,(concat user-emacs-directory
-                                                 "backups")))))
+        ediff-window-setup-function 'ediff-setup-windows-plain)
+
+  (unless backup-directory-alist
+    (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
+                                                   "backups"))))))
 
 (provide 'better-defaults)
 ;;; better-defaults.el ends here
