@@ -82,7 +82,8 @@
         require-final-newline t
         visible-bell t
         load-prefer-newer t
-        ediff-window-setup-function 'ediff-setup-windows-plain)
+        ediff-window-setup-function 'ediff-setup-windows-plain
+        custom-file (expand-file-name "~/.emacs.d/custom.el"))
 
   (unless backup-directory-alist
     (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
