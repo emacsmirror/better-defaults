@@ -47,7 +47,7 @@
     (ido-mode t)
     (setq ido-enable-flex-matching t))
 
-  (unless (eq window-system 'ns)
+  (unless (memq window-system '(mac ns))
     (menu-bar-mode -1))
   (when (fboundp 'tool-bar-mode)
     (tool-bar-mode -1))
