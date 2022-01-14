@@ -78,6 +78,8 @@ functionality came from if it turns out to be undesired.
 
 * `indent-tabs-mode` defaults to nil.
 
+* `backups-by-copying` defaults to t. Preserves hardlinks you're editing.
+
 * `savehist-mode` defaults to t. Persists M-x commands history across shutdowns.
 
 ## Copyright

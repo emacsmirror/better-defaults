@@ -83,6 +83,7 @@
         require-final-newline t
         visible-bell t
         load-prefer-newer t
+        backup-by-copying t
         ediff-window-setup-function 'ediff-setup-windows-plain
         custom-file (expand-file-name "custom.el" user-emacs-directory))
 
