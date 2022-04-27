@@ -17,7 +17,7 @@ lot of hope for it.
 Obviously there are many further tweaks you could do to improve Emacs,
 (like those the Starter Kit and similar packages) but this package
 focuses a few changes that have near-universal appeal, lovingly
-hand-selected by inhabitants of the `#emacs` channel on Freenode. The
+hand-selected by inhabitants of the `#emacs` channel on Libera. The
 approach of the Starter Kit and co. is problematic in that when users
 add in a big pile of unrelated functionality it's difficult to debug
 when it goes wrong, and it's hard to tell where a specific piece of
