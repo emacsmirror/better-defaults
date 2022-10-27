@@ -84,6 +84,7 @@
         visible-bell t
         load-prefer-newer t
         backup-by-copying t
+        frame-inhibit-implied-resize t
         ediff-window-setup-function 'ediff-setup-windows-plain
         custom-file (expand-file-name "custom.el" user-emacs-directory))
 
