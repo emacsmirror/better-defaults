@@ -82,8 +82,11 @@ functionality came from if it turns out to be undesired.
 
 * `savehist-mode` defaults to t. Persists M-x commands history across shutdowns.
 
+* `frame-inhibit-implied-resize` defaults to nil; prevents changing
+  font, etc triggering a resize of the entire frame in non-tiling setups.
+
 ## Copyright
 
-Copyright © 2013-2014 Phil Hagelberg and contributors
+Copyright © 2013-2022 Phil Hagelberg and contributors
 
-Licensed under the same license as Emacs (GPL v3 or later) unless otherwise specified.
+Licensed under the same license as Emacs (GPL v3 or later).
