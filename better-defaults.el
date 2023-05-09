@@ -43,7 +43,7 @@
 ;;; Code:
 
 (progn
-  (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode))
+  (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode) (fboundp 'fido-vertical-mode))
     (ido-mode t)
     (setq ido-enable-flex-matching t))
 
