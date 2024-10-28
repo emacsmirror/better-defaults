@@ -43,7 +43,9 @@
 ;;; Code:
 
 (progn
-  (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode) (bound-and-true-p fido-vertical-mode))
+  (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode)
+              (bound-and-true-p fido-vertical-mode)
+              (bound-and-true-p vertico-mode))
     (ido-mode t)
     (setq ido-enable-flex-matching t))
 
@@ -85,6 +87,9 @@
         load-prefer-newer t
         backup-by-copying t
         frame-inhibit-implied-resize t
+        read-file-name-completion-ignore-case t
+        read-buffer-completion-ignore-case t
+        completion-ignore-case t
         ediff-window-setup-function 'ediff-setup-windows-plain
         custom-file (expand-file-name "custom.el" user-emacs-directory))
 

@@ -38,7 +38,10 @@ functionality came from if it turns out to be undesired.
   [smex](https://github.com/nonsequitur/smex). Sometimes when creating
   a new file you'll want to temporarily disable ido; this can be done
   with `C-f`. You may also want to look at
-  [`ido-use-virtual-buffers`](http://www.archivum.info/emacs-devel@gnu.org/2010-04/00629/ChangeLog-entry-for-ido.el.html).
+  [`ido-use-virtual-buffers`](http://www.archivum.info/emacs-devel@gnu.org/2010-04/00629/ChangeLog-entry-for-ido.el.html). If
+  you have an ido-replacing library like
+  [vertico](https://github.com/minad/vertico) active, ido will not
+  automatically be activated.
 
 * The toolbar, menu bar, and scroll bar are all turned off.
 
@@ -85,8 +88,11 @@ functionality came from if it turns out to be undesired.
 * `frame-inhibit-implied-resize` defaults to nil; prevents changing
   font, etc triggering a resize of the entire frame in non-tiling setups.
 
+* Completion for file names, buffers, and more is set to be
+  case-insensitive.
+
 ## Copyright
 
-Copyright © 2013-2022 Phil Hagelberg and contributors
+Copyright © 2013-2024 Phil Hagelberg and contributors
 
 Licensed under the same license as Emacs (GPL v3 or later).
