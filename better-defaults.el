@@ -3,7 +3,7 @@
 ;; Copyright © 2013-2020 Phil Hagelberg and contributors
 
 ;; Author: Phil Hagelberg
-;; URL: https://github.com/technomancy/better-defaults
+;; URL: https://git.sr.ht/~technomancy/better-defaults
 ;; Version: 0.1.5
 ;; Package-Requires: ((emacs "25.1"))
 ;; Created: 2013-04-16
